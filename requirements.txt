@@ -1,0 +1,7 @@
+BeautifulSoup4
+Flask
+flask_bootstrap
+gunicorn
+Markdown
+requests
+requests-cache

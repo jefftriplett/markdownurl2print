@@ -1,6 +1,6 @@
 # markdown-url-2-print
 
-Quick and simple app to render a Markdown document into both a reader and friend friendly format
+Simple app to render a Markdown document into both a reader and printer friendly format.
 
     http://markdownurl2print.herokuapp.com/?url=
 

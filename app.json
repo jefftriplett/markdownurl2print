@@ -1,0 +1,14 @@
+{
+  "name": "Markdown Url 2 Print",
+  "description": "Simple app to render a Markdown document into both a reader and printer friendly format.",
+  "repository": "https://github.com/jefftriplett/markdownurl2print",
+  "keywords": [
+    "flask",
+    "markdown",
+    "python",
+    "redis"
+  ],
+  "addons": [
+    "redistogo"
+  ]
+}

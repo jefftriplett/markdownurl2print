@@ -7,3 +7,5 @@ Simple app to render a Markdown document into both a reader and printer friendly
 ### Themes used:
 - https://sphinx-readable-theme.readthedocs.org/en/latest/_static/readable.css
 - https://raw.githubusercontent.com/furtivecss/print/master/lib/print.css
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jefftriplett/markdownurl2print)

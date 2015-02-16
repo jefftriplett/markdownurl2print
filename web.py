@@ -35,12 +35,21 @@ def homepage():
         content = req.text
 
         if content:
-            content = Markup(markdown.markdown(content))
+            content = markdown.markdown(content)
             soup = BeautifulSoup(content)
             title = find_title(soup)
+            images = soup.find_all('img')
+            for image in images:
+                try:
+                    css_class = image['class']
+                except KeyError:
+                    css_class = ''
+
+                image['class'] = ' '.join([css_class, 'img-responsive']).strip()
+
             context = {
                 'title': title,
-                'content': content,
+                'content': Markup(soup),
             }
             return render_template('index.html', **context)
 

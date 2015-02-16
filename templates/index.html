@@ -6,6 +6,11 @@
 {{ super() }}
 <link href="{{ url_for('static', filename='readable.css') }}" media="all" rel="stylesheet" />
 <link href="{{ url_for('static', filename='print.css') }}" media="print" rel="stylesheet" />
+<style>
+img {
+    width: 100%;
+}
+</style>style>
 {% endblock head %}
 
 {% block content %}

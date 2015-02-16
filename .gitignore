@@ -56,3 +56,4 @@ target/
 
 # custom for our project
 *.sqlite
+stdout

@@ -3,5 +3,6 @@ Flask
 flask_bootstrap
 gunicorn
 Markdown
+redis
 requests
 requests-cache

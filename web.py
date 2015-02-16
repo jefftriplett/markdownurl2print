@@ -1,5 +1,6 @@
 import markdown
 import os
+import redis
 import requests
 import requests_cache
 
@@ -10,8 +11,6 @@ from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 Bootstrap(app)
-
-requests_cache.install_cache('demo_cache', expire_after=1800)
 
 
 def find_title(soup):
@@ -57,5 +56,9 @@ def homepage():
 
 
 if __name__ == '__main__':
+    redis_url = os.getenv('REDISTOGO_URL', 'redis://localhost:6379')
+    redis = redis.from_url(redis_url)
+    requests_cache.install_cache('demo_cache', backend='redis', connection=redis, expire_after=1800)
+
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=True)

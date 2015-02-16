@@ -1,4 +1,4 @@
-# markdown-url-2-print
+# markdownurl2print
 
 Simple app to render a Markdown document into both a reader and printer friendly format.
 
